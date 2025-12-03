@@ -5,6 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="/amazoncloneproject/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>amazoncloneproject</title>
+    <script type="text/javascript">
+        // Single Page App routing script for GitHub Pages
+        (function(){
+          var redirect = sessionStorage.getItem('redirect');
+          
+          // Check if the page is loaded directly and is not the root
+          if (redirect && redirect != location.href) {
+            history.replaceState(null, null, redirect);
+            sessionStorage.removeItem('redirect');
+          }
+        })();
+  </script>
     <script type="module" crossorigin src="/amazoncloneproject/assets/index-CnOIgROc.js"></script>
     <link rel="stylesheet" crossorigin href="/amazoncloneproject/assets/index-CC85MGAY.css">
   </head>
