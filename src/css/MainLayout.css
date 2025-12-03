@@ -1,0 +1,32 @@
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  
+  overflow-x: hidden;     
+}
+
+.scroll-container {
+  margin-top: 60px;  
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.layout-container {
+  display: flex;
+  background-color:#E3E6E6;
+}
+
+#main-content {
+  flex: 1;
+}
+
+/*  Responsive layout */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}

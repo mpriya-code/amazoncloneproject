@@ -1,0 +1,253 @@
+  #side-bar { 
+    position: sticky;
+    top:0;
+    height: calc(100vh - 100px);
+    background: #f4f4f4; 
+  } 
+
+  .sidebar.open {
+      width:250px;
+  }
+
+
+  .sidebar.collapsed {
+     width: 60px;   
+     overflow-y: hidden;
+  }
+
+  #sidebar-maincontent-container li {
+      list-style: none;
+      text-decoration: none;
+      font-size: 13px;
+  }
+
+  #sidebar-maincontent-container ul {
+    padding-left:14px;
+  }
+
+  /* Hide labels and arrows when collapsed */
+  .sidebar.collapsed .menu-label,
+  .sidebar.collapsed .arrow {
+      display: none;
+  }
+
+  .sidebar.collapsed .menu-item {
+      justify-content: center;
+  }
+
+  .arrow-button {
+      position: absolute;
+      top:232px;   
+      transform: translateY(50%);
+      width: 24px;
+      height: 21px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: black; 
+      z-index: 1000;
+  } 
+
+  .arrow-button.collapsed {
+    left: 41px;
+  }
+
+  .arrow-button.open {
+    left: 218px;
+  }
+
+  .arrow-button::after {
+    border-style: solid;
+    border-width: 9px;
+    border-color: transparent;
+    border-right: 10px solid black;
+    border-left-width: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    content: " ";
+    position: relative;
+    top: -6px;
+  } 
+
+
+.filterButton {
+    width: 29px;
+    border-radius: 7px;
+    height: 25px;
+    padding: 4px;
+}
+
+
+.side-bar-divider {
+    border-bottom: 1px solid #d5dbdb;
+    margin: 5px 0;
+    padding: 0;
+    display: block;
+}
+
+#side-navbar-heading {
+    display:flex;
+    align-items:center;
+    color: white;
+    padding:12px;
+    background-color: rgb(35, 47, 62);
+}
+
+#side-navbar-heading h2 {
+    margin: 0;
+    font-size:20px;
+}
+
+#side-navbar-heading h2 span {
+     font-size:18px;
+}
+
+/* #sidebar-subcontent-container { */
+.submenu-content-container {
+    padding-top: 7px;
+    padding-bottom: 30px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    overflow-y: scroll;    
+    transform: translateX(250px);
+    width: 100%;
+    height: 100%;   
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    /* pointer-events: none;  */
+}
+
+
+
+/* Smooth expand/collapse */
+.sidenavContainer {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.sidebar-navcontent-heading {
+    margin-top: 5px;
+    font-size: 15px;
+    padding:10px 0px 10px 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.sidebar-heading {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.signin-label{
+  padding-left:8px;
+}
+
+.sidebar-content {
+    padding:10px 0px 10px 15px;
+    font-size: 15px;
+}
+
+.sidebar-content:hover{
+    background-color: #eaeded;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .sidebar-content-row  */
+  .menu-item {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    width:250px;
+    padding:10px 39px 10px 15px;
+    font-size: 15px;
+}
+
+
+
+.menu.main.active {
+  transform: translateX(0);
+  opacity: 1;
+  /* pointer-events: auto; */
+  z-index: 2;
+}
+
+/* Inactive menu slides out to right if submenu, left if main */
+.menu.main.inactive {
+  transform: translateX(-250px);
+  opacity: 0;
+  z-index: 1;
+}
+
+/* .menu.inactive.submenu {
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 1;
+} */
+
+
+.submenu-content-container.submenu.active {
+   transform: translateX(0); 
+   opacity: 1;
+   z-index: 2;
+}
+
+.submenu-content-container.submenu.inactive {
+   transform: translateX(250px);
+    opacity: 0;
+  z-index: 1;
+}
+
+ .menu-item i { 
+    padding-right: 15px;
+}
+
+
+ .menu-item:hover { 
+    background-color: #eaeded;
+    cursor: pointer;
+  }
+
+.sideNavBarDropDown {
+    display:flex;
+    justify-content:start;
+    align-items: center;
+    padding:10px 10px 10px 15px;
+    cursor:pointer;
+}
+
+
+.menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    overflow: scroll;    
+    transform: translateX(0px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 250px;
+    height: 100%;  
+}
+
+
+.side-bar-submenu {
+    margin-top: 10px;
+    padding:10px 10px 10px 15px;
+    font-weight: bold;
+}
+
+
+.side-bar-submenu:hover {
+  background-color: #eaeded;
+  cursor: pointer;
+}
+
+
+

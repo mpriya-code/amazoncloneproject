@@ -1,0 +1,36 @@
+.nav-global-location {
+    padding: 5px;
+}
+
+.location-navitem-div {
+    display:flex;
+    font-size:12px;
+    align-items:center;
+}
+
+.location-navitem-div  img{
+    width:21px;
+    height: auto;
+    margin-top:10px;
+}
+
+.location-nav-item {
+    display:flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+
+.nav-global-location:hover {
+    outline: 1px solid white;
+}
+
+.location-item-line1 {   
+    color: #ccc ;
+    font-weight: 700;
+    margin-bottom:0;
+}
+
+.location-item-line2 {
+    font-weight: 700;
+    font-size:14px;
+}

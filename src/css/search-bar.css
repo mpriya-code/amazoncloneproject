@@ -1,0 +1,49 @@
+.search-box {
+    font-size: 1rem; 
+    flex-grow: 1;
+    outline: none;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.search-dropdown {
+    width: 6rem;
+    font-size: 16px;
+    background-color: rgb(210, 208, 208);
+    outline:none;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+}
+
+#search-text {
+    font-size: 16px;
+    padding: 10px;
+    width:100%;
+    height: 97%;
+    border:0;
+    outline:0;
+    background-color: #f1f1f1;
+}
+
+
+.search-icon  {
+    background-color: rgba(255, 203, 105, 0.849);
+    width:50px;
+    cursor:pointer;
+    color: #28416c;
+    border-radius: 0 5px 5px 0;
+    padding: 8px;
+    margin-left: -4px;
+    font-size: 20px;
+    outline: 0;
+    width: 50px;
+}
+
+   
+
+   
+    
+   
+
+

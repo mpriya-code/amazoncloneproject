@@ -1,0 +1,99 @@
+.country-dropdown-card { 
+    position: absolute;
+    display: none;
+    top: 50px;
+    width: 220px;
+    left: 1085px;
+    background: #fff;
+    color: black;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13);
+    font-size: 13px;
+    z-index: 1000; 
+}
+
+ /* Hover On Language menu shows lanuage dropdown card  */
+.nav-country-list:hover .country-dropdown-card {
+    display: block;
+}
+
+/* Arrow on top center */
+.country-dropdown-card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+
+ .country-radio {
+    margin:0;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;    
+} 
+
+
+.country-text {
+    display:block;
+    font-size: 13px;
+    color: #444;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 0 0 7px;
+}
+
+.country-link {
+    margin-left: 25px;
+    margin-top: 10px;
+    color: #0066C0;
+    text-decoration: none;
+}
+
+.country-dropdown-card ul {
+    margin:0;
+    padding:0;
+}
+
+.country-dropdown-card ul li{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.country-dropdown-card ul li {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.nav-divider {
+    margin-top: 6px;
+    margin-left: 24px;
+    position: relative;
+    display: block;
+    line-height: 1px;
+    height: 1px;
+    overflow: hidden;
+    background: #EEE;
+    margin: 0 0 9px;
+}
+
+
+.country-bottom-text {
+    display:flex;
+    align-items: center;
+    font-size: 13px;
+    color: #444;
+    font-weight: 400;
+    line-height: 16px;
+}

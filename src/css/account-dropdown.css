@@ -1,0 +1,121 @@
+.nav-account-dropdown-card {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 835px;
+    width: 460px;
+    background: #fff;
+    color: black;
+    padding:14px;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13);
+    font-size: 13px;
+    z-index: 1000; 
+}
+
+    /* Hover On Language menu shows lanuage dropdown card  */
+.nav-account:hover .nav-account-dropdown-card {
+    display: block;
+}
+
+/* Arrow on top center */
+.nav-account-dropdown-card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 78%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+
+.nav-accounts {
+    margin-bottom: 18px;
+    padding: 12px;
+    background: rgb(231, 244, 245);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.nav-account-profile {
+    background-color: transparent;
+    border: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:7px;
+    background: rgb(231, 244, 245);
+    border-radius: 8px;
+    width: 100%; 
+    cursor: pointer;
+}
+
+.nav-select-profile{
+    margin-left: 9px;
+    color: rgb(68, 68, 68);
+}
+
+.nav-manage-profile {
+    color: rgb(0, 113, 133);
+    height: 30px;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    padding: 0px 5px;
+    align-content: center; 
+}
+
+.nav-wish-list {
+    width:210px;
+    float: left;
+}
+
+.nav-account-title {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom:10px;
+}
+
+.nav-account-list{
+    width:210px;
+    border-left:1px solid #eee;
+    padding-left:20px;
+    float:right;
+}
+
+.nav-wish-list ul ,.nav-account-list ul {
+    margin:0;
+    padding:0;
+}
+
+.nav-wish-list ul li,.nav-account-list ul li{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.nav-account-text {
+    display:block;
+    font-size: 13px;
+    color: #444;
+    font-weight: 400;
+    padding: 0 0 7px;
+    line-height:16px;
+}
+
+.nav-account-link {
+    text-decoration: none;
+    list-style: none;
+    cursor:pointer;
+}
+
+
+.nav-account-link :hover{
+    color: #c7511f;
+    text-decoration: underline;
+}
