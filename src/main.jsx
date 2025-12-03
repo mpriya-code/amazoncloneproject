@@ -6,8 +6,10 @@ import { BrowserRouter } from "react-router-dom";
 
 import { CartProvider } from "./context/CartContext"
 
+const basename = '/amazoncloneproject';
+
 createRoot(document.getElementById('root')).render( 
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <CartProvider>
      <App />
      </CartProvider>
