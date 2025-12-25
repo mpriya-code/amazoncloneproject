@@ -1,66 +1,62 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle, faCircleDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function CountryDropDownCard() {
     return(
             <div className="country-dropdown-card">
                 <ul>
                     <li>
-                        <div className="country-text">
-                            <i className="fa fa-circle-o country-radio"></i> 
-                            <span>English </span>
-                            -
-                            <span> EN</span>
-                        </div>
+                        <label class="country-option">
+                            <input type="radio" name="country" checked/>
+                            <span className="radio"></span>
+                            <span>English - EN</span>                           
+                        </label>
                     </li>
                     <div className="nav-divider"></div> 
-                    <li>
-                        <div className="country-text">
-                            <i className="fa fa-circle-o country-radio"></i> 
-                            <span>Hindi </span>
-                            -
-                            <span> HI</span>
-                        </div>
+                    <li>                     
+                         <label class="country-option">
+                            <input type="radio" name="country"/>
+                            <span className="radio"></span>
+                            <span>Hindi - HI</span>
+                        </label>
+                    </li>
+                    <li>                       
+                         <label class="country-option">
+                            <input type="radio" name="country"/>
+                            <span className="radio"></span>
+                            <span>Tamil  - TA</span>                             
+                        </label>
                     </li>
                     <li>
-                        <div className="country-text">
-                            <i className="fa fa-circle-o country-radio"></i> 
-                            <span>Tamil </span>
-                            -
-                            <span> TA</span>
-                        </div>
+                         <label class="country-option">
+                            <input type="radio" name="country"/>
+                            <span className="radio"></span>
+                            <span>Telugu - TE</span>                            
+                        </label>
                     </li>
                     <li>
-                        <div className="country-text">
-                            <i className="fa fa-circle-o country-radio"></i> 
-                            <span>Telugu </span>
-                            -
-                            <span> TE</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="country-text">
-                            <i className="fa fa-circle-o country-radio"></i> 
-                            <span>Kanada </span>
-                            -
-                            <span> KN</span>
-                        </div>
+                         <label class="country-option">
+                            <input type="radio" name="country"/>
+                            <span className="radio"></span>
+                            <span>Kanada - KN</span>
+                        </label>
                     </li>          
                 </ul>
                 <div className="country-text">
                     <a href="#">
-                    <div className="country-link">Learn More</div>
+                         <div className="country-link">Learn More</div>
                     </a>         
                 </div>
                 <div className="nav-divider"></div>
                 <div className="country-bottom-text">
                     <div className="flag">
-                    <img src='./images/indianflag.png'  alt="Indian Flag"/> 
+                        <img src='./images/indianflag.png'  alt="Indian Flag"/> 
                     </div>
                     <span> You are shopping on Amazon.in</span>
                 </div>        
                 <div className="country-bottom-text">
                     <a href="#">
-                    <div className="country-link"> Change country/region</div>                   
+                        <div className="country-link"> Change country/region</div>                   
                     </a>   
                 </div>
             </div> 

@@ -3,7 +3,7 @@ import "../css/country-dropdown.css"
 
 export default  function NavCountryList(){
     return (
-        <div className="nav-country-list">
+        <div className="nav-country-list country-wrapper">
             <div className="nav-country-option">
                 <div className="flag">
                     <img src='./images/indianflag.png'  alt="Indian Flag"/> 

@@ -1,9 +1,9 @@
 .country-dropdown-card { 
-    position: absolute;
     display: none;
-    top: 50px;
-    width: 220px;
-    left: 1085px;
+    position: absolute;  
+    top: 45px;
+    min-width: 220px;
+    padding:14px;
     background: #fff;
     color: black;
     border-radius: 3px;
@@ -22,9 +22,8 @@
 .country-dropdown-card::before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: 10%;
-    transform: translateX(-50%);
+    top: -10px;  
+    margin-left: 30px;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
@@ -32,48 +31,73 @@
     border-bottom: 10px solid white;
 }
 
-
- .country-radio {
-    margin:0;
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    width: 18px;
-    height: 18px;    
-} 
-
-
-.country-text {
-    display:block;
-    font-size: 13px;
-    color: #444;
-    font-weight: 400;
-    line-height: 16px;
-    padding: 0 0 7px;
-}
-
-.country-link {
-    margin-left: 25px;
-    margin-top: 10px;
-    color: #0066C0;
-    text-decoration: none;
-}
-
 .country-dropdown-card ul {
     margin:0;
     padding:0;
+    list-style: none;
 }
 
-.country-dropdown-card ul li{
+.country-dropdown-card  li {
     margin:0;
     padding:0;
     list-style: none;
 }
 
-.country-dropdown-card ul li {
-    margin:0;
-    padding:0;
-    list-style: none;
+.country-option {
+    display: flex;
+    align-items : center;
+    padding: 6px 0px;
+    cursor :pointer;
+    font-size: 14px;
+    color: #111;
+}
+
+.country-option input { 
+    opacity: 0;
+    position: absolute;
+}
+
+.country-option:hover {
+    text-decoration : underline;
+}
+
+.radio {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  background: #fff;
+}
+
+
+.radio::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    background: #f08804; 
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.country-option:hover .radio:after {
+    opacity: 1;   
+}
+
+/* Checked state → solid grey dot */
+.country-option input:checked + .radio::after {
+  color: #f08804; 
+  opacity: 1;
+} 
+
+.country-option:hover {
+    text-decoration: underline;
+    color: #f08804; 
 }
 
 .nav-divider {
@@ -88,7 +112,6 @@
     margin: 0 0 9px;
 }
 
-
 .country-bottom-text {
     display:flex;
     align-items: center;
@@ -97,3 +120,13 @@
     font-weight: 400;
     line-height: 16px;
 }
+
+.country-link {
+    margin-left: 25px;
+    margin-top: 10px;
+    color: #0066C0;
+    text-decoration: none;
+}
+
+
+ 

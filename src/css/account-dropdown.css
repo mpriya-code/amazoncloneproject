@@ -1,17 +1,18 @@
 .nav-account-dropdown-card {
     display: none;
     position: absolute;
-    top: 55px;
-    left: 835px;
-    width: 460px;
+    top: 55px;   
+    min-width: 460px;   
     background: #fff;
     color: black;
+    right: 0;
     padding:14px;
     border-radius: 3px;
     border: 1px solid #bbb;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .13);
     font-size: 13px;
     z-index: 1000; 
+    margin-right:-35px;  
 }
 
     /* Hover On Language menu shows lanuage dropdown card  */
@@ -24,8 +25,7 @@
     content: "";
     position: absolute;
     top: -10px;
-    left: 78%;
-    transform: translateX(-50%);
+    right: 35px;  
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
@@ -118,4 +118,15 @@
 .nav-account-link :hover{
     color: #c7511f;
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hover-card {
+    /* Ignore the 62.5% ratio on phones; center it on the screen */
+    left: 50% !important;
+    position: fixed; /* Better for fixed navbars on mobile */
+    top: 60px;       /* Match your navbar height */
+    width: 90vw;
+  }
 }
